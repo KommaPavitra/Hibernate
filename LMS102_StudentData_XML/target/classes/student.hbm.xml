@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"https://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.dl.entity.Student" table="Student">
+	
+        <id name="studentId" type="int">
+            <column name="studentId" length="5" not-null="true"/>
+            <generator class="increment" />
+        </id>
+        
+        <property name="studentFirstName" type="java.lang.String">
+            <column name="studentFirstName" not-null="true"/>
+        </property>
+        
+       <property name="studentLastName" type="java.lang.String">
+            <column name="studentLastName" not-null="true"/>
+       </property>
+       
+       <property name="studentContact" type="java.lang.Long">
+            <column name="studentContact" not-null="true"/>
+       </property>
+       
+        <property name="studentEmail" type="java.lang.String">
+            <column name="studentEmail" not-null="true"/>
+       </property>
+       
+        <property name="studentAddress" type="java.lang.String">
+            <column name="studentAddress" not-null="true"/>
+       </property>
+       
+       <property name="studentAdharNumber" type="java.lang.Long">
+            <column name="studentAdharNumber" not-null="true"/>
+       </property>
+      
+    </class>
+</hibernate-mapping>
